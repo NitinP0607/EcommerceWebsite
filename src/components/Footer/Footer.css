@@ -1,0 +1,157 @@
+.footer{
+    background:#111;
+    color:#fff;
+    padding:70px 6% 20px;
+}
+
+.footer-container{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.5fr;
+    gap:50px;
+}
+
+.footer-column h2{
+    font-size:32px;
+    margin-bottom:20px;
+}
+
+.footer-column h3{
+    font-size:22px;
+    margin-bottom:20px;
+}
+
+.footer-column p{
+    color:#bbb;
+    line-height:1.8;
+}
+
+.footer-column ul{
+    list-style:none;
+}
+
+.footer-column ul li{
+    margin-bottom:14px;
+}
+
+.footer-column ul li a{
+    color:#bbb;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.footer-column ul li a:hover{
+    color:#fff;
+    padding-left:5px;
+}
+
+.footer-socials{
+    display:flex;
+    gap:15px;
+    margin-top:25px;
+}
+
+.footer-socials a{
+    width:45px;
+    height:45px;
+    background:#222;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    transition:.3s;
+    font-size:18px;
+}
+
+.footer-socials a:hover{
+    background:#fff;
+    color:#111;
+    transform:translateY(-5px);
+}
+
+.contact-item{
+    display:flex;
+    gap:12px;
+    margin-bottom:18px;
+    color:#bbb;
+    line-height:1.6;
+}
+
+.contact-item svg{
+    color:#fff;
+    margin-top:4px;
+}
+
+.footer-bottom{
+    margin-top:50px;
+    border-top:1px solid rgba(255,255,255,.1);
+    padding-top:20px;
+    text-align:center;
+}
+
+.footer-bottom p{
+    color:#999;
+}
+
+/* Laptop */
+
+@media(max-width:1024px){
+
+.footer-container{
+grid-template-columns:repeat(2,1fr);
+gap:40px;
+}
+
+}
+
+/* Tablet */
+
+@media(max-width:768px){
+
+.footer{
+padding:60px 5% 20px;
+}
+
+.footer-container{
+grid-template-columns:1fr;
+text-align:center;
+}
+
+.footer-socials{
+justify-content:center;
+}
+
+.contact-item{
+justify-content:center;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:480px){
+
+.footer-column h2{
+font-size:28px;
+}
+.footer-container{
+    grid-template-columns: 1fr;
+}
+
+.footer-column h3{
+font-size:20px;
+}
+
+.footer-column p,
+.footer-column li,
+.contact-item{
+font-size:15px;
+}
+
+.footer-socials a{
+width:40px;
+height:40px;
+font-size:16px;
+}
+
+}

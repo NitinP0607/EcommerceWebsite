@@ -1,0 +1,165 @@
+.popular-products-container{
+    padding: 70px 3%;
+}
+
+.popular-products-title{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.popular-products-title h2{
+    font-size: 42px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.popular-products-title p{
+    color: #666;
+    font-size: 19px;
+}
+
+.popular-product-box{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+
+.mens-collection,
+.womens-collection,
+.kids-collection{
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .3s;
+    cursor: pointer;
+    border: 1px solid #050505;
+}
+
+.mens-collection:hover,
+.womens-collection:hover,
+.kids-collection:hover{
+    transform: translateY(-2px);
+}
+
+.image-collections{
+    width: 100%;
+    height: 380px;
+    overflow: hidden;
+}
+
+.image-collections img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.mens-collection:hover img,
+.womens-collection:hover img,
+.kids-collection:hover img{
+    transform: scale(1.09);
+}
+
+.mens-collection h3,
+.womens-collection h3,
+.kids-collection h3{
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(85, 90, 87);
+    padding: 20px 20px 10px;
+}
+
+.mens-collection p,
+.womens-collection p,
+.kids-collection p{
+    padding: 0 20px 20px;
+    color: #1e311e;
+    line-height: 1.6;
+}
+
+@media (max-width:1024px){
+
+    .popular-product-box{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .image-collections{
+        height:380px;
+    }
+
+    .popular-products-title h2{
+        font-size:36px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .popular-products-container{
+        padding:60px 5%;
+    }
+
+    .popular-product-box{
+        grid-template-columns:1fr;
+        gap:25px;
+    }
+
+    .popular-products-title{
+        margin-bottom:40px;
+    }
+
+    .popular-products-title h2{
+        font-size:32px;
+    }
+
+    .popular-products-title p{
+        font-size:16px;
+    }
+
+    .image-collections{
+        height:340px;
+    }
+
+    .mens-collection h3,
+    .womens-collection h3,
+    .kids-collection h3{
+        font-size:24px;
+    }
+
+}
+
+@media (max-width:576px){
+
+    .popular-products-container{
+        padding:50px 20px;
+    }
+
+    .popular-products-title h2{
+        font-size:28px;
+    }
+
+    .popular-products-title p{
+        font-size:15px;
+        line-height:1.6;
+    }
+
+    .image-collections{
+        height:280px;
+    }
+
+    .mens-collection h3,
+    .womens-collection h3,
+    .kids-collection h3{
+        font-size:22px;
+        margin:10px 0px 8px;
+    }
+
+    .mens-collection p,
+    .womens-collection p,
+    .kids-collection p{
+        margin:0 0px 20px;
+        font-size:14px;
+    }
+
+}

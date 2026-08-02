@@ -1,0 +1,128 @@
+.why-shop {
+    padding: 50px 6%;
+    background: #f8f8f8;
+}
+
+.why-shop-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.why-shop-title h2 {
+    font-size: 42px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #999595;
+    margin-bottom: 12px;
+}
+
+.why-shop-title p {
+    font-size: 17px;
+    color: #3b3939;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.7;
+}
+
+.why-shop-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.why-card {
+    background: white;
+    border-radius: 18px;
+    padding: 35px 25px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    transition: .35s;
+}
+
+.why-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 40px rgba(0,0,0,.12);
+}
+
+.why-icon {
+    width: 75px;
+    height: 75px;
+    margin: auto;
+    border-radius: 50%;
+    background: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.why-card h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #222;
+}
+
+.why-card p {
+    color: #666;
+    line-height: 1.7;
+    font-size: 15px;
+}
+
+/* Laptop */
+
+@media (max-width: 1024px) {
+    .why-shop-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+
+    .why-shop {
+        padding: 60px 5%;
+    }
+
+    .why-shop-title h2 {
+        font-size: 34px;
+    }
+
+    .why-shop-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .why-card {
+        padding: 30px 20px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+
+    .why-shop-title h2 {
+        font-size: 28px;
+    }
+
+    .why-shop-title p {
+        font-size: 15px;
+    }
+
+    .why-icon {
+        width: 65px;
+        height: 65px;
+        font-size: 28px;
+    }
+
+    .why-card h3 {
+        font-size: 20px;
+    }
+     .why-shop-container {
+        grid-template-columns: 1fr;
+    }
+
+}
