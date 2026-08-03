@@ -14,9 +14,7 @@ import {
 const Footer = () => {
   return (
     <footer className="footer">
-
       <div className="footer-container">
-
         {/* Company */}
 
         <div className="footer-column">
@@ -24,16 +22,9 @@ const Footer = () => {
 
           <p>
             Discover premium fashion designed for every occasion. We bring
-            quality, comfort, and modern style together for men, women,
-            and kids.
+            quality, comfort, and modern style together for men, women, and
+            kids.
           </p>
-
-          <div className="footer-socials">
-            <a href="#"><FaFacebookF /></a>
-            <a href="#"><FaInstagram /></a>
-            <a href="#"><FaTwitter /></a>
-            <a href="#"><FaLinkedinIn /></a>
-          </div>
         </div>
 
         {/* Shop */}
@@ -42,11 +33,21 @@ const Footer = () => {
           <h3>Shop</h3>
 
           <ul>
-            <li><a href="#">Men</a></li>
-            <li><a href="#">Women</a></li>
-            <li><a href="#">Kids</a></li>
-            <li><a href="#">New Arrivals</a></li>
-            <li><a href="#">Best Sellers</a></li>
+            <li>
+              <a href="#">Men</a>
+            </li>
+            <li>
+              <a href="#">Women</a>
+            </li>
+            <li>
+              <a href="#">Kids</a>
+            </li>
+            <li>
+              <a href="#">New Arrivals</a>
+            </li>
+            <li>
+              <a href="#">Best Sellers</a>
+            </li>
           </ul>
         </div>
 
@@ -56,11 +57,21 @@ const Footer = () => {
           <h3>Quick Links</h3>
 
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact Us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms & Conditions</a></li>
-            <li><a href="#">FAQs</a></li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="#">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="#">FAQs</a>
+            </li>
           </ul>
         </div>
 
@@ -83,17 +94,25 @@ const Footer = () => {
             <FaEnvelope />
             <span>support@shoptoday.com</span>
           </div>
-
         </div>
-
       </div>
-
+      <div className="footer-socials">
+          <a href="#">
+            <FaFacebookF />
+          </a>
+          <a href="#">
+            <FaInstagram />
+          </a>
+          <a href="#">
+            <FaTwitter />
+          </a>
+          <a href="#">
+            <FaLinkedinIn />
+          </a>
+        </div>
       <div className="footer-bottom">
-        <p>
-          © {new Date().getFullYear()} Shop Today. All Rights Reserved.
-        </p>
+        <p>© {new Date().getFullYear()} Shop Today. All Rights Reserved.</p>
       </div>
-
     </footer>
   );
 };

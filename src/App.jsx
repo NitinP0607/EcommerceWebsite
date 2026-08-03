@@ -1,4 +1,5 @@
 import React from 'react'
+import { useEffect, useState } from "react";
 import './index.css'
 import {Routes, Route} from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar';
@@ -8,7 +9,6 @@ import Contact from './pages/Contact/Contact';
 import Help from './pages/Help/Help';
 import Blog from './pages/Blog/Blog';
 import Footer from './components/Footer/Footer';
-
 const App = () => {
   return (
     <div>
