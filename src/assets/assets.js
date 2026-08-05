@@ -3,6 +3,7 @@ import kids_collection from "./Kids_Collection.jpg";
 import mens_collection from "./Mens_Collection.jpg";
 import womens_collection from "./Womens_collection.jpg";
 import accessories from "./accesories.jpg"; 
+import logo from "./logo.webp";
 
 // Men's
 import mens_tshirt from "./mens_tshirt.jpg";
@@ -59,7 +60,8 @@ export const assets = {
   kids_ethnic,
   kids_footwear,
   kids_accessories,
-  accessories
+  accessories,
+  logo
 } 
 
 export const collectionsdata = [

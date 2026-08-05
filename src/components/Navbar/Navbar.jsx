@@ -1,14 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import "./Navbar.css";
+import { assets } from "../../assets/assets";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+
+ useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <>
-      <div className="navbar-container">
+      <div className={`navbar-container ${scrolled ? "scrolled" : ""}`}>
         <div className="left-navbar">
           <ul>
             <li>
@@ -24,7 +37,7 @@ const Navbar = () => {
         </div>
         <div className="middle">
           <div className="logo">
-            <h2>ShopToday</h2>
+            <img src={assets.logo} alt="" />
           </div>
         </div>
         <div className="right-navbar">
@@ -41,8 +54,10 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
-      <div className="mobile-navbar">
-        <h2 className="mobile-logo">ShopToday</h2>
+      <div className={`mobile-navbar ${scrolled ? "scrolled" : ""}`}>
+        <div className="mobile-logo">
+          <img src={assets.logo} alt="" />
+        </div>
 
         <button className="menu-btn" onClick={() => setOpen(!open)}>
           {open ? <HiX /> : <HiOutlineMenuAlt3 />}
