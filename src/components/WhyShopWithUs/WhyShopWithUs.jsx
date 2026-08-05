@@ -1,5 +1,6 @@
 import React from "react";
 import "./WhyShopWithUs.css";
+import {assets} from "../../assets/assets"
 import CountUpModule from "react-countup";
 
 const CountUp = CountUpModule.default ?? CountUpModule;
@@ -53,52 +54,36 @@ const promises = [
     id: 1,
     icon: <FaAward />,
     title: "Premium Quality",
+    description:
+      "Every outfit is crafted with premium fabrics for long-lasting comfort.",
   },
   {
     id: 2,
     icon: <FaTshirt />,
     title: "Latest Fashion",
+    description:
+      "Stay ahead with trendy styles inspired by modern fashion collections.",
   },
   {
     id: 3,
     icon: <FaTags />,
     title: "Affordable Prices",
+    description:
+      "Enjoy premium fashion at prices that fit every budget and lifestyle.",
   },
   {
     id: 4,
     icon: <FaLeaf />,
     title: "Comfort & Style",
+    description:
+      "Designed to deliver everyday comfort without compromising on style.",
   },
   {
     id: 5,
     icon: <FaShippingFast />,
     title: "Fast Delivery",
-  },
-  {
-    id: 6,
-    icon: <FaUndoAlt />,
-    title: "Easy Returns",
-  },
-  {
-    id: 7,
-    icon: <FaLock />,
-    title: "Secure Payments",
-  },
-  {
-    id: 8,
-    icon: <FaHeadset />,
-    title: "24/7 Support",
-  },
-  {
-    id: 9,
-    icon: <FaStar />,
-    title: "Trusted by Thousands",
-  },
-  {
-    id: 10,
-    icon: <FaCheckCircle />,
-    title: "Quality Assured",
-  },
+    description: "Quick and reliable shipping to your doorstep across India.",
+  }
 ];
 
 const stats = [
@@ -163,20 +148,35 @@ const WhyShopWithUs = () => {
       {/* Promise */}
 
       <div className="our-promise">
-
         <div className="section-heading">
           <span>OUR PROMISE</span>
           <h2>Committed To Quality</h2>
+          <p>
+            Every product at NITRA is carefully selected to deliver quality,
+            comfort and modern fashion for every member of your family.
+          </p>
         </div>
 
-        <div className="promise-grid">
-          {promises.map((item) => (
-            <div className="promise-card" key={item.id}>
-              <div className="promise-icon">{item.icon}</div>
+        <div className="promise-wrapper">
+          {/* Right */}
+          <div className="promise-right">
+            <img src={assets.promise_image} alt="NITRA Fashion" />
+          </div>
+          {/* Left */}
 
-              <h4>{item.title}</h4>
-            </div>
-          ))}
+          <div className="promise-left">
+            {promises.map((item) => (
+              <div className="promise-item" key={item.id}>
+                <div className="promise-icon">{item.icon}</div>
+
+                <div className="promise-content">
+                  <h4>{item.title}</h4>
+
+                  <p>{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
 
@@ -199,61 +199,9 @@ const WhyShopWithUs = () => {
         ))}
       </div>
 
-      {/* Trust Bar */}
-
-      <div className="trust-bar">
-
-        <div className="trust-item">
-    <FaCheckCircle />
-    <span>100% Secure Checkout</span>
-  </div>
-
-  <div className="trust-item">
-    <FaShippingFast />
-    <span>Fast Delivery Across India</span>
-  </div>
-
-  <div className="trust-item">
-    <FaUndoAlt />
-    <span>7-Day Easy Returns</span>
-  </div>
-
-  <div className="trust-item">
-    <FaStar />
-    <span>Trusted by 150K+ Customers</span>
-  </div>
-
-  <div className="trust-item">
-    <FaAward />
-    <span>Premium Quality Products</span>
-  </div>
-
-  <div className="trust-item">
-    <FaLock />
-    <span>Safe & Secure Payments</span>
-  </div>
-
-  <div className="trust-item">
-    <FaHeadset />
-    <span>24/7 Customer Support</span>
-  </div>
-
-  <div className="trust-item">
-    <FaTags />
-    <span>Best Price Guarantee</span>
-  </div>
-
-  <div className="trust-item">
-    <FaGift />
-    <span>Exclusive Member Offers</span>
-  </div>
-
-      </div>
-
       {/* CTA */}
 
       <div className="why-banner">
-
         <span>READY TO ELEVATE YOUR STYLE?</span>
 
         <h2>Fashion Designed For Every Generation</h2>
@@ -264,7 +212,6 @@ const WhyShopWithUs = () => {
         </p>
 
         <button>Explore Collection</button>
-
       </div>
     </section>
   );

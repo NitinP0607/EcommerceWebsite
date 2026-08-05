@@ -4,6 +4,7 @@ import mens_collection from "./Mens_Collection.jpg";
 import womens_collection from "./Womens_collection.jpg";
 import accessories from "./accesories.jpg"; 
 import logo from "./logo.webp";
+import promise_image from "./promise_image.webp"
 
 // Men's
 import mens_tshirt from "./mens_tshirt.jpg";
@@ -61,7 +62,8 @@ export const assets = {
   kids_footwear,
   kids_accessories,
   accessories,
-  logo
+  logo,
+  promise_image
 } 
 
 export const collectionsdata = [

@@ -1,317 +1,233 @@
 .why-shop {
-  width: 100%;
-  padding: 100px 5%;
-  background: #fafafa;
+  padding: 4rem 1rem;
+  background: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  color: #333;
 }
 
-/* ===========================
-        Section Heading
-=========================== */
-
-.why-shop-title,
-.section-heading {
+/* Heading */
+.why-shop-title {
   text-align: center;
-  max-width: 750px;
-  margin: auto;
+  max-width: 800px;
+  margin: 0 auto 3rem;
 }
 
-.why-shop-title span,
-.section-heading span,
-.why-banner span {
-  display: inline-block;
-  color: #8b5cf6;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  margin-bottom: 12px;
-  text-transform: uppercase;
+.why-shop-title span {
+  color: #ff4c60;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-.why-shop-title h2,
-.section-heading h2 {
-  font-size: 42px;
-  color: #111;
-  margin-bottom: 20px;
-  font-weight: 700;
+.why-shop-title h2 {
+  font-size: 2.2rem;
+  margin: 1rem 0;
 }
 
 .why-shop-title p {
-  color: #666;
-  line-height: 1.8;
-  font-size: 17px;
+  font-size: 1rem;
+  color: #555;
 }
 
-/* ===========================
-      Feature Cards
-=========================== */
-
+/* Features */
 .why-shop-container {
-  margin-top: 70px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .why-card {
-  background: white;
-  border-radius: 20px;
-  padding: 35px 25px;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
   text-align: center;
-  border: 1px solid #ececec;
-  transition: .35s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
 }
 
 .why-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 50px rgba(0,0,0,.08);
+  transform: translateY(-5px);
 }
 
 .why-icon {
-  width: 75px;
-  height: 75px;
-  margin: auto;
-  background: linear-gradient(135deg,#111,#444);
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-  font-size: 28px;
-  margin-bottom: 22px;
-  transition: .35s;
-}
-
-.why-card:hover .why-icon {
-  transform: rotate(-8deg) scale(1.1);
+  font-size: 2rem;
+  color: #1a3a3a;
+  margin-bottom: 1rem;
 }
 
 .why-card h3 {
-  margin-bottom: 15px;
-  color: #111;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
 }
 
-.why-card p {
-  color: #666;
-  line-height: 1.8;
-}
-
-/* ===========================
-        Promise
-=========================== */
-
+/* Promise Section */
 .our-promise {
-  margin-top: 100px;
+  margin-bottom: 4rem;
 }
 
-.promise-grid {
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 25px;
-  margin-top: 50px;
-}
-
-.promise-card {
-  background: white;
-  border-radius: 20px;
-  padding: 35px;
+.section-heading {
   text-align: center;
-  transition: .35s;
-  border: 1px solid #ececec;
+  margin-bottom: 2rem;
 }
 
-.promise-card:hover {
-  background: #111;
-  color: white;
-  transform: translateY(-8px);
+.section-heading span {
+  color: #263963;
+  font-weight: 600;
+}
+
+.section-heading h2 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.promise-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.promise-right {
+  flex: 1;
+  text-align: center;
+}
+
+.promise-right img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.promise-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.promise-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .promise-icon {
-  font-size: 40px;
-  margin-bottom: 18px;
+  font-size: 1.8rem;
+  color: #324647;
 }
 
-.promise-card:hover .promise-icon {
-  color: white;
+.promise-content h4 {
+  margin: 0;
+  font-size: 1.1rem;
 }
 
-/* ===========================
-        Statistics
-=========================== */
-
+/* Stats Section */
 .stats-section {
-  margin-top: 100px;
-  background: linear-gradient(135deg,#111827,#1f2937,#374151);
-  padding: 60px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 30px;
-}
-
-.stat-box {
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 2rem;
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .stat-box h2 {
-  color: white;
-  font-size: 46px;
-  margin-bottom: 10px;
+  font-size: 2rem;
+  color: #2c2c46;
 }
 
 .stat-box p {
-  color: #d1d5db;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
 }
 
-/* ===========================
-      Trust Bar
-=========================== */
-
+/* Trust Bar */
 .trust-bar {
-  margin-top: 70px;
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 4rem;
 }
 
 .trust-item {
-  background: white;
-  border: 1px solid #ececec;
-  border-radius: 16px;
-  padding: 20px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  justify-content: center;
-  transition: .3s;
+  gap: 0.5rem;
+  background: #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .trust-item svg {
-  color: #123328;
-  font-size: 20px;
-}
-.trust-item span{
-    font-size: 16px;
+  color: #1e887a;
+  font-size: 1.2rem;
 }
 
-.trust-item:hover {
-  transform: translateY(-1px);
-  box-shadow: 0 10px 30px rgba(0,0,0,.08);
-}
-
-/* ===========================
-      CTA
-=========================== */
-
+/* CTA Banner */
 .why-banner {
-  margin-top: 100px;
-  padding: 80px 40px;
-  background: linear-gradient(135deg,#000,#111827,#374151);
   text-align: center;
+  background: linear-gradient(135deg, #413963, #99335a);
+  color: #fff;
+  padding: 3rem 2rem;
+}
+
+.why-banner span {
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
 .why-banner h2 {
-  color: white;
-  font-size: 44px;
-  margin: 20px 0;
+  font-size: 2rem;
+  margin: 1rem 0;
 }
 
 .why-banner p {
-  color: #d1d5db;
-  max-width: 700px;
-  margin: auto;
-  line-height: 1.8;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
 }
 
 .why-banner button {
-  margin-top: 35px;
-  padding: 15px 42px;
+  background: #fff;
+  color: #000000;
   border: none;
-  cursor: pointer;
-  font-size: 16px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
   font-weight: 600;
-  color: white;
-  background: linear-gradient(135deg,#7c3aed,#4f46e5);
-  transition: .35s;
+  cursor: pointer;
+  transition: background 0.3s ease;
 }
 
 .why-banner button:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 15px 35px rgba(79,70,229,.4);
+  background: #f1f1f1;
 }
 
-@media(max-width:1100px){
+/* Responsive */
+@media (max-width: 768px) {
+  .promise-wrapper {
+    flex-direction: column;
+  }
 
-.why-shop-container,
-.promise-grid,
-.stats-section,
-.trust-bar{
-    grid-template-columns:repeat(3,1fr);
+  .why-shop-title h2,
+  .section-heading h2,
+  .why-banner h2 {
+    font-size: 1.6rem;
+  }
+
+  .stat-box h2 {
+    font-size: 1.6rem;
+  }
 }
 
-}
+@media (max-width: 480px) {
+  .why-shop {
+    padding: 2rem 1rem;
+  }
 
-@media(max-width:768px){
+  .why-banner {
+    padding: 2rem 1rem;
+  }
 
-.why-shop{
-    padding:70px 5%;
-}
-
-.why-shop-title h2,
-.section-heading h2,
-.why-banner h2{
-    font-size:30px;
-}
-
-.why-shop-container,
-.promise-grid,
-.stats-section,
-.trust-bar{
-    grid-template-columns:1fr 1fr 1fr;
-}
-
-.stats-section{
-    padding:40px 25px;
-}
-
-.stat-box h2{
-    font-size:36px;
-}
-
-.why-banner{
-    padding:60px 25px;
-}
-
-.why-banner button{
-    width:100%;
-}
-
-}
-
-@media(max-width:480px){
-
-.why-shop-title h2,
-.section-heading h2{
-    font-size:26px;
-}
-
-.why-card,
-.promise-card{
-    padding:25px;
-}
-
-.why-banner h2{
-    font-size:26px;
-}
-
-.why-banner p{
-    font-size:15px;
-}
-.why-shop-container{
-    grid-template-columns: 1fr;
-}
-.promise-grid,
-.stats-section,
-.trust-bar{
-    grid-template-columns:1fr 1fr;
-}
-
+  .why-banner h2 {
+    font-size: 1.4rem;
+  }
 }
