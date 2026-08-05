@@ -64,6 +64,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .middle .logo img {
@@ -71,6 +72,7 @@
   height: 55px;
   object-fit: cover;
   scale: calc(2);
+  cursor: pointer;
 }
 
 .navbar-container .active {

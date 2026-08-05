@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { HiOutlineMenuAlt3, HiX } from "react-icons/hi";
 import "./Navbar.css";
 import { assets } from "../../assets/assets";
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [open, setOpen] = useState(false);
     const [scrolled, setScrolled] = useState(false);
 
@@ -37,7 +38,7 @@ const Navbar = () => {
         </div>
         <div className="middle">
           <div className="logo">
-            <img src={assets.logo} alt="" />
+            <img src={assets.logo} onClick={()=>navigate("/")} alt="" />
           </div>
         </div>
         <div className="right-navbar">
@@ -56,7 +57,7 @@ const Navbar = () => {
       </div>
       <div className={`mobile-navbar ${scrolled ? "scrolled" : ""}`}>
         <div className="mobile-logo">
-          <img src={assets.logo} alt="" />
+          <img src={assets.logo} onClick={()=>navigate("/")} alt="" />
         </div>
 
         <button className="menu-btn" onClick={() => setOpen(!open)}>

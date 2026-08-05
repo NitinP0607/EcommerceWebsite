@@ -9,7 +9,6 @@ const Home = () => {
     <div className='home-container'>
       <Hero />
       <PopularProducts />
-      <Categories />
       <WhyShopWithUs />
     </div>
   )
