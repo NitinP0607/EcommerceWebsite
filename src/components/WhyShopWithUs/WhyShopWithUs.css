@@ -309,7 +309,9 @@
 .why-banner p{
     font-size:15px;
 }
-.why-shop-container,
+.why-shop-container{
+    grid-template-columns: 1fr;
+}
 .promise-grid,
 .stats-section,
 .trust-bar{
